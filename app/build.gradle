@@ -27,4 +27,19 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+
+    compile 'com.abooc.debug:debug-core:latest.release'
+
+    // LeanCloud 基础包
+    compile('cn.leancloud.android:avoscloud-sdk:v3.+')
+    // 推送与实时聊天需要的包
+    compile('cn.leancloud.android:avoscloud-push:v3.+@aar') { transitive = true }
+    // LeanCloud 用户反馈包
+    compile('cn.leancloud.android:avoscloud-feedback:v3.+@aar')
+
+    compile 'com.google.code.gson:gson:2.6.2'
+
 }
